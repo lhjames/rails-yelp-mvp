@@ -12,7 +12,9 @@
 
   </head>
 
-  <body>
-    <%= yield %>
+  <body id="<%= controller.controller_name%>-<%= controller.action_name %>">
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

@@ -1,7 +1,5 @@
 <h1>Restaurants</h1>
 
-<% @restaurants.each do |restaurant| %>
-    <%= link_to restaurant.name, restaurant_path(restaurant) %>
-  <% end %>
+<%= render "cards-restaurants" %>
 
- <%#= link_to 'Leave a review', new_restaurant_review_path(@restaurant) %>
+

@@ -1,0 +1,17 @@
+.cards {
+    display: flex;
+    align-items: center;
+}
+.card_restau {
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    padding: 10px;
+}
+a.restau_link {
+    display: block;
+    padding: 10px;
+}
+.card-details {
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    padding: 1em;
+    margin: 1em auto;
+}

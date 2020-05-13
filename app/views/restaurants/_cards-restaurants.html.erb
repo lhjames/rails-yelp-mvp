@@ -1,0 +1,10 @@
+<div class="cards">
+	<% @restaurants.each do |restaurant| %>
+		<%= link_to restaurant_path(restaurant), class: "restau_link" do %>
+		  <div class="card_restau">
+		  	<img src="https://source.unsplash.com/160x90/?food" alt="pic">
+		  	<p><%= restaurant.name %></p>
+		  </div>
+		<% end %>
+	<% end %>
+</div>
