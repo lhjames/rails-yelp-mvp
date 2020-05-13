@@ -1,0 +1,16 @@
+<h1>Restaurants</h1>
+
+<!-- Sur la show, on a accès à l'instance de restaurant, donc impossible de faire une itération sur Restaurants, car on a accès qu'à l'instance de restaurant -->
+  <p><%= @restaurant.name %></p>
+  <p><%= @restaurant.address %></p>
+  <p><%= @restaurant.phone_number %></p>
+  <p><%= @restaurant.category %></p>
+
+<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+<%= link_to 'Back', restaurants_path %> |
+<%= link_to 'Leave a review', new_restaurant_review_path(@restaurant) %>
+<br>
+<br>
+<% @restaurants.each do |restaurant| %>
+    <%= link_to restaurant.name, restaurant_path(restaurant) %>
+  <% end %>
